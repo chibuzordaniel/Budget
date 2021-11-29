@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* TOP BUDGET-INCOME */
+
+.top{
+background: url(../img/aerial-view-beach-beautiful-462162.jpg);
+height: 400px;
+
+}
+
+
+.budget{
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.budget_tltle h1{
+ color: #ffff;
+}
+
+
+.budget-one{
+color: #ffff;
+}
+
+
+.budget_value{
+    padding-top: 20px;
+    font-size: 40px;
+    color: #ffff;
+}
+
+
+.budget_income-clearfix{
+    display: flex;  
+    padding-top: 20px;
+    padding-left: 570px;
+  
+}
+
+
+.budget-background{
+    background:blue;
+    width: 570px;
+    height: 50px;
+    display: flex;
+    margin-left: -50px;
+    margin-top: 20px;
+}
+
+
+
+.budget_income-text{
+    padding-left: 10px;
+    font-size: 21px;
+    padding: 10px;
+
+}
+
+
+.budget_income-value{
+    margin-left: 300px;
+    font-size: 22px;
+    color: #ffff;
+    padding: 10px;
+}
+
+/* TOP BUDGET-EXPENSES */
+
+
+.right-clearfix{
+    display: flex;
+}
+
+.budget_expenses-clearfix{
+    display: flex;
+    padding-left: 500px;
+    background: red;
+    width: 70px;
+    height: 50px;
+    margin-left: 520px;
+    margin-top: 20px;
+}
+
+.budget_expenses-text{
+    margin-left: -500px;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.budget_expenses-value{
+    padding-left:287px;
+    padding-top: 10px;
+    font-size: 22px;
+    color: #ffff;
+}
+
+
+
+
+.budget_expenses-percentage{
+    padding: 2px;
+    padding-left: 10px;
+    background: antiquewhite;
+    margin-left: 8px;
+    width: 30px;
+    height: 17px;
+    margin-top: 13px;
+    
+    
+}
+
+
+.budgdet-percen{
+    
+}
+
+/* Add botton background */
+
+
+.add{
+ background:rgb(228, 228, 228);
+ width: 100%;
+ height: 90px;
+}
+
+
+.add_container{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.add_type{
+    width: 70px;
+    height: 50px;
+    border: none;
+}
+
+
+
+.add_description{
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+    margin-left: 10px;
+    border: none;
+}
+
+.add_value{
+    width: 90px;
+    height: 50px;
+    padding-left: 20px;
+    border: none;
+    margin-left: 20px;
+}
+
+
+/* container-clearfix */
+
+.container-clearfix{
+    display: flex;
+    margin-left: 340px;
+    margin-top: 50px;
+}
+
+
+.income_list{
+color: blue;
+}
+
+
+.expenses_title{
+    margin-left: 350px;
+    color: red;
+}
+
+
+.add_btn{
+    padding: 5px;
+    margin-left: 20px;
+    border: none;
+    background: #ffff;
+}
+
+
+
+
+
+
+
+
+
+
+
