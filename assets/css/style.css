@@ -193,6 +193,11 @@ color: blue;
 }
 
 
+.item clearfix{
+    display: flex;
+}
+
+
 
 
 

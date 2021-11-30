@@ -53,7 +53,7 @@ return {
  
 
      //push it into our data structure
-     data.allItem[type].push(newItem);
+    data.allItems[type].push(newItem);
 
      // Return the new element
      return newItem;
@@ -80,7 +80,9 @@ var UIController = (function(){
        inputType: '.add_type',
        inputDescription: '.add_description',
        inputValue:'.add_value',
-       inputBtn: '.add_btn'
+       inputBtn: '.add_btn',
+       incomecontainer: '.income_list',
+       expensescontainer: '.expenses_list'
     };
   
     return {
@@ -89,7 +91,7 @@ var UIController = (function(){
 
                  type: document.querySelector(DOMstrings.inputType).value,
                  description: document.querySelector(DOMstrings.inputDescription).value,
-                 value: document.querySelector(DOMstrings.inputValue).value
+                 value: document.querySelector(DOMstrings.inputValu e).value
                  
               };
 
@@ -97,19 +99,32 @@ var UIController = (function(){
 
 
         addListItem: function(obj, type) {
-
-         // create HTML string with placeholder text
+            var  html, newHtlm, element;
+          // create HTML string with placeholder text
          
-        html ='<div class="item clearfix" id="income-0"><div class="item_description">Salary</div>
-        <div class="right clearfix"><div class="item_value">+ 2,100.00</div> <div class="item_delete">
-         <button class="item_delete-btn">sign</button></div> </div></div>'
-    
+         if (type === 'inc') {
+             element = DOMstrings.incomecontainer;
 
+            html =  `<div class="item clearfix" id="income-%id%"><div class="item_description">%description%</div> <div class="right clearfix">
+            <div class="item_value">%value%</div> <div class="item_delete">
+            <button class="item_delete-btn">sign</button> </div> </div> </div>`;           
+         } else if (type === 'exp') {
+             element = DOMstrings.expensescontainer;
+
+            html = `<div class="item clearfix" id="expense-%id%"><div class="item_description">%descriptoin%</div>
+            <div class="right clearfix"><div class="item_value">%value%</div>
+            <div class="item_percentage">21%</div> <div class="item_delete">
+            <button class="item_delete-btn">sign</button></div> </div></div>`
+   
+         }
+       
          //Replace the placeholder text with some actual data
-
+          newHtlm = html.replace('%id%', obj.id);
+          newHtlm = newHtlm.replace('%description%', obj.description);
+          newHtlm = newHtlm.replace('%value%', obj.value);
 
          //Insert the HTML into the DOM
-
+          document.querySelector(element).insertAdjacentHTML('beforeend', newHtlm);
 
 
         },
@@ -154,6 +169,9 @@ var controller = (function(budgetCtrl, UIctrl) {
        newItem = budgetCtrl.addItem(input.type, input.description, input.value);
 
     //   console.log(input);
+
+    // 3. Add the item to the UI
+    UIctrl.addListItem(newItem, input.type);
 
 
 
