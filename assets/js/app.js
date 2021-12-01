@@ -81,8 +81,8 @@ var UIController = (function(){
        inputDescription: '.add_description',
        inputValue:'.add_value',
        inputBtn: '.add_btn',
-       incomecontainer: '.income_list',
-       expensescontainer: '.expenses_list'
+       incomecontainer: '.income_title',
+       expensescontainer: '.expenses_title'
     };
   
     return {
@@ -91,7 +91,7 @@ var UIController = (function(){
 
                  type: document.querySelector(DOMstrings.inputType).value,
                  description: document.querySelector(DOMstrings.inputDescription).value,
-                 value: document.querySelector(DOMstrings.inputValu e).value
+                 value: document.querySelector(DOMstrings.inputValue).value
                  
               };
 
@@ -102,19 +102,19 @@ var UIController = (function(){
             var  html, newHtlm, element;
           // create HTML string with placeholder text
          
-         if (type === 'inc') {
+         if (type === 'inc') { 
              element = DOMstrings.incomecontainer;
 
-            html =  `<div class="item clearfix" id="income-%id%"><div class="item_description">%description%</div> <div class="right clearfix">
-            <div class="item_value">%value%</div> <div class="item_delete">
-            <button class="item_delete-btn">sign</button> </div> </div> </div>`;           
+            html =  `<div class="item_clearfix" id="income-%id%"><div class="item_description">%description%</div> <div class="right clearfix">
+            <div class="item_value">:%value%</div> <div class="item_delete">
+            <button class="item_delete-btn">Cancel</button> </div> </div> </div>`;           
          } else if (type === 'exp') {
              element = DOMstrings.expensescontainer;
 
-            html = `<div class="item clearfix" id="expense-%id%"><div class="item_description">%descriptoin%</div>
+            html = `<div class="item_clearfix" id="expense-%id%"><div class="item_description">%descriptoin%</div>
             <div class="right clearfix"><div class="item_value">%value%</div>
             <div class="item_percentage">21%</div> <div class="item_delete">
-            <button class="item_delete-btn">sign</button></div> </div></div>`
+            <button class="item_delete-btn">Cancel</button></div> </div></div  >`;
    
          }
        

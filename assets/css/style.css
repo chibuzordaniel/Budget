@@ -174,14 +174,16 @@ color: #ffff;
 }
 
 
-.income_list{
+.income_title{
 color: blue;
+
 }
 
 
 .expenses_title{
     margin-left: 350px;
     color: red;
+    display: flex;
 }
 
 
@@ -192,10 +194,38 @@ color: blue;
     background: #ffff;
 }
 
+ /* bottom */
 
-.item clearfix{
+ .add_type option{
+     margin-left: 90px;
+ }
+
+
+.item_clearfix{
+    margin-top: 30px;
     display: flex;
+    background:rgb(228, 228, 228);
+    width:400px;
+    height: 50px;
 }
+
+.item_delete button{
+    margin-left: 230px;
+    position: relative;
+    bottom: 29px;
+}
+
+.item_description{
+    padding-top: 10px; 
+    padding-left: 15px;
+}
+
+.item_value{
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+
 
 
 
