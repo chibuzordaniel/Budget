@@ -189,7 +189,7 @@ color: blue;
 
 .add_btn{
     padding: 5px;
-    margin-left: 20px;
+    margin-left: 21px;
     border: none;
     background: #ffff;
 }
@@ -202,7 +202,7 @@ color: blue;
 
 
 .item_clearfix{
-    margin-top: 30px;
+    margin-top: 31px;
     display: flex;
     background:rgb(228, 228, 228);
     width:400px;
