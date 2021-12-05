@@ -111,10 +111,10 @@ var UIController = (function(){
          } else if (type === 'exp') {
              element = DOMstrings.expensescontainer;
 
-            html = `<div class="item_clearfix" id="expense-%id%"><div class="item_description">%descriptoin%</div>
-            <div class="right clearfix"><div class="item_value">%value%</div>
+            html = `<div class="item_clear" id="expense-%id%"><div class="item_description">%description%</div>
+            <div class="right clearfix"><div class="item_val">%value%</div>
             <div class="item_percentage">21%</div> <div class="item_delete">
-            <button class="item_delete-btn">Cancel</button></div> </div></div  >`;
+            <button class="item_delete-btn">Cancel</button></div> </div></div>`;
    
          }
        
@@ -127,6 +127,20 @@ var UIController = (function(){
           document.querySelector(element).insertAdjacentHTML('beforeend', newHtlm);
 
 
+        },
+
+        clearfields: function() {
+            var fields, fieldsArr;
+
+           fields = document.querySelectorAll(DOMstrings.inputDescription + ', ' + DOMstrings.inputValue);
+
+           fieldsArr = Array.prototype.slice.call(fields);
+
+           fieldsArr.forEach(function(current, index, array) {
+              current.value = "";
+           });
+
+           fieldsArr[0].focus();
         },
 
       getDOMstrings: function() {
@@ -170,7 +184,11 @@ var controller = (function(budgetCtrl, UIctrl) {
 
     //   console.log(input);
 
-    // 3. Add the item to the UI
+
+    // 3. clear the fields
+    UIctrl.clearfields();
+
+    // 4. Add the item to the UI
     UIctrl.addListItem(newItem, input.type);
 
 

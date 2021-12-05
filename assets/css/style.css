@@ -225,6 +225,25 @@ color: blue;
     margin-left: 20px;
 }
 
+.item_val{
+    color: red;
+}
+
+
+
+.item_clear{
+    display: flex;
+    margin-left: -127px;
+    background: red;
+    color: red;
+    margin-top: 60px;
+    background:rgb(228, 228, 228);
+    color: #ffff;
+    width: 400px;
+    height: 50px;
+}
+
+
 
 
 
