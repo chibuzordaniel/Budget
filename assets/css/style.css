@@ -225,11 +225,21 @@ color: blue;
     margin-left: 20px;
 }
 
+/* section val */
+
 .item_val{
     color: red;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
 
+
+.item_descrip{
+    color: red;
+    padding-left: 5px;
+    padding-top: 10px;
+}
 
 .item_clear{
     display: flex;
@@ -241,6 +251,28 @@ color: blue;
     color: #ffff;
     width: 400px;
     height: 50px;
+    padding-left: 10px;
+}
+
+
+
+.right-clear{
+    display: flex;
+   
+
+} 
+
+
+.expenses{
+    display: block;
+}
+
+
+.item_percen{
+    color: red;
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 10px;
 }
 
 

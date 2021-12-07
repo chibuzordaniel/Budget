@@ -111,9 +111,9 @@ var UIController = (function(){
          } else if (type === 'exp') {
              element = DOMstrings.expensescontainer;
 
-            html = `<div class="item_clear" id="expense-%id%"><div class="item_description">%description%</div>
-            <div class="right clearfix"><div class="item_val">%value%</div>
-            <div class="item_percentage">21%</div> <div class="item_delete">
+            html = `<div class="item_clear" id="expense-%id%"><div class="item_descrip">%description%</div>
+            <div class="right-clear"><div class="item_val">:%value%</div>
+            <div class="item_percen">:21%</div> <div class="item_delete">
             <button class="item_delete-btn">Cancel</button></div> </div></div>`;
    
          }
