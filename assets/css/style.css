@@ -210,9 +210,7 @@ color: blue;
 }
 
 .item_delete button{
-    margin-left: 230px;
-    position: relative;
-    bottom: 29px;
+    
 }
 
 .item_description{
@@ -225,55 +223,7 @@ color: blue;
     margin-left: 20px;
 }
 
-/* section val */
 
-.item_val{
-    color: red;
-    padding-left: 20px;
-    padding-top: 10px;
-}
-
-
-
-.item_descrip{
-    color: red;
-    padding-left: 5px;
-    padding-top: 10px;
-}
-
-.item_clear{
-    display: flex;
-    margin-left: -127px;
-    background: red;
-    color: red;
-    margin-top: 60px;
-    background:rgb(228, 228, 228);
-    color: #ffff;
-    width: 400px;
-    height: 50px;
-    padding-left: 10px;
-}
-
-
-
-.right-clear{
-    display: flex;
-   
-
-} 
-
-
-.expenses{
-    display: block;
-}
-
-
-.item_percen{
-    color: red;
-    padding-left: 30px;
-    padding-top: 10px;
-    font-size: 10px;
-}
 
 
 
