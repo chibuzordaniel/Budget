@@ -214,3 +214,9 @@ var controller = (function(budgetCtrl, UIctrl) {
 controller.init();
 
 
+
+// element = document.scripts;
+
+// console.log(element);
+
+
